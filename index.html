@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-bar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" >
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                <input type="checkbox" class="input">
+                <span class="slider"></span>
+              </label>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1> Total price </h1>
+      <h2 id="total"> 0 </h2>
+      <div class="row">
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.u7RHTynuztobKsBeBg2paQHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Smart Watch</h5>
+                  <p class="card-text">Une smartwatch est une montre numérique dotée de fonctionnalités intelligentes, conçue pour améliorer votre quotidien grâce à la technologie avancée et à la connectivité.</p>
+                  <a id="moins" class="btn btn-primary">-</a>
+                  <span id="quantité"> 0 </span>
+                  <a id="plus" class="btn btn-primary">+</a>
+                  <p> Prix:
+                    <span id="prix">1500</span>€
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <i class="fa-solid fa-heart" id="heart"></i>
+                    <i class="fa-solid fa-trash" id="trash"></i>
+                </div>
+              </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src=https://th.bing.com/th/id/OIP.SBCfjuQqHzkOxOy8r-VrbgHaIy?w=162&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7 class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">Smart Watch</h5>
+                  <p class="card-text">Une smartwatch est une montre numérique dotée de fonctionnalités intelligentes, conçue pour améliorer votre quotidien grâce à la technologie avancée et à la connectivité.</p>
+                  <a id="moins" class="btn btn-primary">-</a>
+                  <span id="quantité"> 0 </span>
+                  <a id="plus" class="btn btn-primary">+</a>
+                  <p> Prix:
+                    <span id="prix">1000</span>€
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <i class="fa-solid fa-heart" id="heart"></i>
+                    <i class="fa-solid fa-trash" id="trash"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://th.bing.com/th/id/OIP.Dl_aV-4fnDlahNd9CPcfIwHaHa?w=210&h=210&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Smart Watch</h5>
+                  <p class="card-text">Une smartwatch est une montre numérique dotée de fonctionnalités intelligentes, conçue pour améliorer votre quotidien grâce à la technologie avancée et à la connectivité.</p>
+                  <a id="moins" class="btn btn-primary">-</a>
+                  <span id="quantité"> 0 </span>
+                  <a id="plus" class="btn btn-primary">+</a>
+                  <p> Prix:
+                    <span id="prix">900</span>€
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <i class="fa-solid fa-heart" id="heart"></i>
+                    <i class="fa-solid fa-trash" id="trash"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
